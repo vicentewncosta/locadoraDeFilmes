@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Listagem de filmes";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-success" role="button" asp-controller="Filmes" asp-action="Adicionar"> Adicionar novo filme </a>
+    </div>
+    <br />
+
+    <h1 class="display-4">Listagem de filmes</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Ordenação</th>
+          <th scope="col">Filme</th>
+          <th scope="col">Quantidade de exemplares</th>
+          <th scope="col">Quantidade disponível para locação</th>   
+          <th scope="col">Valor da locação por dia</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- primeiro filme --> 
+        <tr>
+          <th scope="row">1</> 
+
+          <!-- Nome do filme --> 
+          <td>Velozes e furiosos 10</td>
+
+          <!-- Quantidade de cópias --> 
+          <td>9</td>
+
+          <!-- Quantidade de cópias disponíveis para locação --> 
+          <td>2</td>
+
+          <!-- Valor diário para locação --> 
+          <td>R$ 10,00</td>
+
+          <!-- Botões -->
+          <td> 
+              <div class="btn-group" role="group">
+                  <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                  <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+        <!-- Segundo filme --> 
+        <tr>
+          <th scope="row">2</th>
+          <td>Vingadores</td>
+          <td>25</td>
+          <td>3</td>
+          <td>R$ 12,00</td>
+           <td> 
+              <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+        <!-- Terceiro filme --> 
+        <tr>
+          <th scope="row">3</th>
+          <td>Dragon ball Z</td>
+          <td>5</td>
+          <td>1</td>
+          <td>R$ 7,50</td>
+           <td> 
+              <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+        <!-- Quarto filme --> 
+        <tr>
+          <th scope="row">4</th>
+          <td>Guardiões da Galáxia 3</td>
+          <td>20</td>
+          <td>0</td>
+          <td>R$ 19,90</td>
+           <td> 
+              <div class="btn-group" role="group">
+                     <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                     <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+        <!-- Quinto filme --> 
+        <tr>
+          <th scope="row">5</th>
+          <td>Tróia</td>
+          <td>50</td>
+          <td>50</td>
+          <td>R$ 3,50</td>
+           <td> 
+              <div class="btn-group" role="group">
+                     <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                     <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+        <!-- Quinto filme --> 
+        <tr>
+          <th scope="row">5</th>
+          <td>X-men</td>
+          <td>50</td>
+          <td>10</td>
+          <td>R$ 13,50</td>
+           <td> 
+              <div class="btn-group" role="group">
+                     <a role="button" class="btn btn-success" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                     <a role="button" class="btn btn-danger" asp-controller="Filmes" asp-action="ApagarConfirmacao">Apagar</a>
+              </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+</div>

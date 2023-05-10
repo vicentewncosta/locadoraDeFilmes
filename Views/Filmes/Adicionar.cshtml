@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Adicionar filmes";
+}
+<!-- Página de adicionar filmes-->
+<div class="text-center">
+    <h1 class="display-4">Adicionar novos filmes</h1>
+</div>
+
+<form>
+
+      <div class="mb-3">
+            <label for="nome" class="form-label">
+                Nome do filme
+            </label>
+            <input type="text" class="form-control" placeholder="Digite o nome do filme">
+      </div>
+
+      <div class="mb-3">
+            <label for="Quantidade de exemplares" class="form-label">
+                Quantidade de exemplares
+            </label>
+            <input type="text" class="form-control" placeholder="Digite a quantidade de exemplares">
+      </div>
+
+      <div class="mb-3">
+            <label for="nome" class="form-label">
+                Quantidade disponível para locação
+            </label>
+            <input type="text" class="form-control" placeholder="Digite a quantidade disponível para locação">
+      </div>
+
+       <div class="mb-3">
+            <label for="nome" class="form-label">
+                Quantidade disponível para locação
+            </label>
+            <input type="text" class="form-control" placeholder="Digite a quantidade disponível para locação">
+      </div>
+
+       <div class="mb-3">
+            <label for="nome" class="form-label">
+                Valor da locação por dia
+            </label>
+            <input type="text" class="form-control" placeholder="Digite o valor da locação por dia">
+      </div>
+
+      <button type="submit" class="btn btn-success btn-block">
+          Adicionar filme
+      </button>
+      <a class="btn btn-secondary btn-block" asp-controller="Filmes" asp-action="Index" role="button">Voltar</a>
+
+</form>
